@@ -12,7 +12,8 @@ def crew
 end
 
 def greet_crew (crew)
-  crew.each {|crew_member| "Hello #{crew_member}."}
+  crew.map {|crew_member| "Hello #{crew_member}."}
+  # switched "each" to "map" >> want new array
 end
 
 def engage
